@@ -36,9 +36,9 @@ namespace CoreLib
 						return us.First();
 					}
 				}
-				
+
 			}
-			catch (Exception)
+			catch (Exception ex)
 			{
 				//log Error
 			}
@@ -72,7 +72,7 @@ namespace CoreLib
 					var us = context.User.Where(x => x.ID == ID).First();
 					us.Enable = Enable;
 					var res = context.SaveChanges();
-					return res == 1;
+					return res > 0;
 				}
 			}
 			catch (Exception)

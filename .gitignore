@@ -5,3 +5,8 @@
 *.sqlite
 /packages
 /.vs
+/CoreLib/obj/Debug
+/CoreLib/bin/Debug
+/MoneyLion/obj/Debug
+/MoneyLion/bin
+/MoneyLion/obj/Release
